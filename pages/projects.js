@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-const Home = () => {
-  const title = 'Personal website of Dan Lennox';
+// @todo: Reminder. NextJS now has built in lazy images.
+
+const Projects = () => {
+  const title = 'Projects';
   return (
-   <div id="page">
+    <div id="page">
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,13 +17,14 @@ const Home = () => {
           {title}
         </h1>
 
-        <p className={styles.description}>
-          Coming soon
-          <code className={styles.code}>(hopefully)</code>
-        </p>
+        <ul>
+          <li>Installation Builder Tool</li>
+          <li>B2B Ordering System</li>
+          <li>Lazy Image Component - Put in own github</li>
+        </ul>
       </main>
     </div>
   )
 }
 
-export default Home;
+export default Projects;
